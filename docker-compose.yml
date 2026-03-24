@@ -5,7 +5,7 @@ services:
     environment:
       POSTGRES_DB: ${DB_NAME:-chicago_data}
       POSTGRES_USER: ${DB_USER:-main}     # Use your macOS username or change to postgres
-      POSTGRES_PASSWORD: ${DB_PASSWORD:-}  # Can be empty for local dev
+      POSTGRES_PASSWORD: chicago123
     ports:
       - "5433:5432"   # Maps container 5432 → host 5433 (avoids clashing with  local Postgres)
     volumes:
